@@ -39,7 +39,7 @@ const teamMembers = [
 
 
 
-console.log('ciao')
+// console.log('ciao')
 const tableElement = document.getElementById('table')
 let result = ''
 
@@ -50,7 +50,7 @@ const formElement = document.getElementById('form')
 
 formElement.addEventListener('submit', function (event) {
   event.preventDefault()
-  console.log('ciao cosa hai inserito')
+ // console.log('ciao cosa hai inserito')
   const nameElement = document.getElementById('name')
   const roleElement = document.getElementById('role')
   const emailElement = document.getElementById('email')
@@ -66,6 +66,7 @@ const name = nameElement.value
 const role = roleElement.value
 const email = emailElement.value
 const img = imgElement.value
+
 const newMember = {
   name ,
   role ,
@@ -116,7 +117,7 @@ formElement.reset()
 
 
 function imputHtml( array){
-  
+  result = ''
   for (let i = 0; i < array.length; i++) {
     const { name, role, email, img } = teamMembers[i]
  
