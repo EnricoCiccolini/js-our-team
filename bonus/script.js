@@ -50,8 +50,8 @@ for (let i = 0; i < teamMembers.length; i++) {
   console.log(img)
 */
   result += `
-                <div class=" row g-0 col-12 col-md-6 col-lg-4 mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
+                <div class=" row  col-12 col-md-6 col-lg-4 column-gap-3 mb-3" style="max-width: 540px;">
+                    <div class="row g-0 m">
                         <div class="col-4">
                             <img src="${img}" class="img-fluid " alt="${name}">
                         </div>
@@ -90,7 +90,7 @@ formElement.addEventListener('submit', function (event) {
   console.log(emailElement.value)
   console.log(imgElement.value)
 
-  result += `<div class=" row g-0 col-12 col-md-6 col-lg-4 mb-3" style="max-width: 540px;">
+  result += `<div class=" row  col-12 col-md-6 col-lg-4 column-gap-3 mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="${imgElement.value}" class="img-fluid " alt="${nameElement.value}">
@@ -107,5 +107,5 @@ formElement.addEventListener('submit', function (event) {
 
 
  tableElement.innerHTML = result
-
+formElement.reset()
 })
