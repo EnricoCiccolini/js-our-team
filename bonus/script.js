@@ -43,11 +43,12 @@ let result = ''
 
 for (let i = 0; i < teamMembers.length; i++) {
   const { name, role, email, img } = teamMembers[i]
+  /*
   console.log(name)
   console.log(role)
   console.log(email)
   console.log(img)
-
+*/
   result += `
                 <div class=" col-4 mb-3" style="max-width: 540px;">
                     <div class="row g-0">
