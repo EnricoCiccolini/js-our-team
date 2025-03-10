@@ -72,5 +72,40 @@ for (let i = 0; i < teamMembers.length; i++) {
 }
 tableElement.innerHTML = result
 
+const formElement = document.getElementById('form')
 
 
+formElement.addEventListener('submit', function (event) {
+  event.preventDefault()
+  console.log('ciao cosa hai inserito')
+  const nameElement = document.getElementById('name')
+  const roleElement = document.getElementById('role')
+  const emailElement = document.getElementById('email')
+  const imgElement = document.getElementById('img')
+
+
+
+  console.log(nameElement.value)
+  console.log(roleElement.value)
+  console.log(emailElement.value)
+  console.log(imgElement.value)
+
+  result += `<div class=" row g-0 col-12 col-md-6 col-lg-4 mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="${imgElement.value}" class="img-fluid " alt="${nameElement.value}">
+                        </div>
+                        <div class="col-8 bg-black">
+                            <div class="card-body text-white ">
+                                <h5 class="card-title">${nameElement.value}</h5>
+                                <p class="card-text">${roleElement.value}</p>
+                                <p class="card-text text-info">${emailElement.value}</small></p>
+                            </div>
+                        </div>
+                      </div>
+                  </div>`
+
+
+ tableElement.innerHTML = result
+
+})
