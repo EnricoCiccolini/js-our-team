@@ -50,12 +50,12 @@ for (let i = 0; i < teamMembers.length; i++) {
   console.log(img)
 */
   result += `
-                <div class=" col-4 mb-3" style="max-width: 540px;">
+                <div class=" row g-0 col-12 col-md-6 col-lg-4 mb-3" style="max-width: 540px;">
                     <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src=${img} class="img-fluid " alt="male1">
+                        <div class="col-4">
+                            <img src=${img} class="img-fluid " alt="${name}">
                         </div>
-                        <div class="col-md-8 bg-black">
+                        <div class="col-8 bg-black">
                             <div class="card-body text-white ">
                                 <h5 class="card-title">${name}</h5>
                                 <p class="card-text">${role}</p>
@@ -71,3 +71,6 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 }
 tableElement.innerHTML = result
+
+
+
